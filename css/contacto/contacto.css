@@ -1,0 +1,154 @@
+/* Estilos generales */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f8e6;
+    color: #000;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Estilos de encabezado */
+.header {
+    background-color: rgb(13, 202, 240);
+    padding: 20px;
+    color: #fff;
+    display: flex;
+    align-items: center;
+}
+
+.header-content {
+    margin-left: 20px;
+}
+
+/* Estilos de navegación */
+#menu-bar {
+    background-color: rgb(13, 202, 240);
+    border-radius: 70px;
+}
+
+/* Estilos de pie de página */
+footer {
+    background-color: #17a2b8;
+    padding: 10px;
+}
+
+/* Estilos para galería de fotos */
+#galeria {
+    background-color: #F0F0B3;
+    border-radius: 35px;
+    padding-bottom: 10px;
+    margin-bottom: 15px;
+}
+
+/* Estilos para sección de video */
+.video-section, #cont-video {
+    width: 100%;
+    background-color: #F0F0B3;
+    border-radius: 35px;
+    padding-bottom: 10px;
+    margin-bottom: 15px;
+}
+
+.embed-responsive {
+    width: 100%;
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+.embed-responsive iframe {
+    border: none;
+}
+
+/* Estilos para mapa */
+#cont-maps, #cont-horario, #contendor-ubicacion {
+    border-radius: 36px;
+    background-color: #F0F0B3;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+/* Estilos para elementos específicos */
+.logo {
+    width: 100px;
+    height: auto;
+    margin-right: 10px;
+}
+
+.social-icons {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.social-icons img, .whatsapp img {
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+}
+
+@media screen and (max-width: 768px) {
+    /* Estilos para pantallas pequeñas */
+    main {
+        flex-direction: column;
+    }
+
+    .news-section, .topics-aside {
+        width: 100%;
+    }
+
+    .embed-responsive-16by9 iframe {
+        max-width: 100%;
+        height: auto;
+    }
+
+    #foto-grande {
+        height: 208px;
+    }
+}
+
+#map {
+    height: 400px;
+    width: 100%;
+}
+
+.foto {
+    height: 331px;
+    width: 410px;
+}
+
+@media screen and (min-width: 768px) {
+    .foto {
+        width: 360px;
+    }
+
+    .embed-responsive {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .embed-responsive-item {
+        max-width: 100%;
+        max-height: 100%;
+    }    
+}
+
+#cont-maps {
+    display: block;
+}
+
+#map, #mensaje {
+    margin-bottom: 10px;
+}
+
+@media(max-width: 768px) {
+    .foto {
+        width: 100%;
+    }
+}

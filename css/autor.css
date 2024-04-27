@@ -1,0 +1,11 @@
+#foto {
+    border-radius: 100%;
+}
+
+.caja-main {
+    border-radius: 36px;
+    background-color: #F0F0B3;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 10px 10px;
+}

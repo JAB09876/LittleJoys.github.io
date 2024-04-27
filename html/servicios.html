@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Servicios</title>
+    <link rel="stylesheet" href="../css/servicios.css">
+    <link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css">
+    <link href="../img/logo.png" rel="icon"/>
+    <!-- Animate.css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <!-- Bootstrap JS -->
+    <script src="../bootstrap/js/bootstrap.bundle.min.js"></script>
+</head>
+<body>
+     <!-- Barra de navegación -->
+     <nav class="navbar navbar-expand-lg navbar-dark bg-info">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="./../img/logo.png" alt="Logo de la tienda" class="logo">
+                Little Joys
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link text-white animate__animated" href="../index.html" onmouseenter="this.classList.add('animate__bounce')" onmouseleave="this.classList.remove('animate__bounce')">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white animate__animated" href="contacto.html" onmouseenter="this.classList.add('animate__bounce')" onmouseleave="this.classList.remove('animate__bounce')">Contacto</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white animate__animated" href="servicios.html" onmouseenter="this.classList.add('animate__bounce')" onmouseleave="this.classList.remove('animate__bounce')">Servicios</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white animate__animated" href="acerca_de.html" onmouseenter="this.classList.add('animate__bounce')" onmouseleave="this.classList.remove('animate__bounce')">Acerca de..</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle text-white animate__animated" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false" onmouseenter="this.classList.add('animate__bounce')" onmouseleave="this.classList.remove('animate__bounce')">Temas de interés</a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="temas_de_interes/guia_de_talla.html">Guía de Tallas</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Contenedores para mostrar los precios -->
+    <div id="precios-impresion" class="container mt-4">
+        <h2 class="text-center">Precios de Impresión</h2>
+        <div class="row">
+            <div class="col-md-8">
+                <ul class="list-group">
+                    <!-- Los precios de impresión se agregarán dinámicamente aquí -->
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div id="precios-estampado" class="container mt-4">
+        <h2 class="text-center">Precios de Estampado</h2>
+            <div class="col-md-8">
+                <ul class="list-group">
+                    <!-- Los precios de estampado se agregarán dinámicamente aquí -->
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- Pie de página -->
+    <footer class="bg-info py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="follow-us">
+                        <p class="text-light">Síguenos en:</p>
+                        <div class="social-icons">
+                            <a href="https://www.facebook.com/littlejoys1?mibextid=ZbWKwL" target="_blank">
+                                <img src="../img/facebook.png" alt="Facebook">
+                            </a>
+                            <a href="mailto:littlejoys94@gmail.com" target="_blank">
+                                <img src="../img/gmail.png" alt="Gmail">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 d-flex justify-content-md-end align-items-center">
+                    <div class="whatsapp">
+                        <p class="text-light mb-0">Envíanos un Whatsapp</p>
+                        <a href="https://api.whatsapp.com/send?phone=%2B50672220611&data=ARDrQfVhoKIiF5mj4MZlJUSZFeZaqvLEHSyHTLa_hbB6KikHGqNtH04qExBrbfqkNFb6s1MkWwquYgv9SgO6uM_l0xJpLyDN8xYuUMH3zw1ONqvePkVuc_oYZ0g9zEvtaQrjc7m1WlkcqwY29Ihq3eR4Lg&source=FB_Page&app=facebook&entry_point=page_cta" target="_blank">
+                            <img src="../img/whatsapp.png" alt="WhatsApp">
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <p class="text-light text-center mt-3 mb-0">© <span id="year"></span> Little Toys. Todos los derechos reservados.</p>
+        </div>
+
+        <!-- Script para mostrar el año actual -->
+        <script>
+            function pintarAnioActual() {
+                var fechaActual = new Date();
+                var anio = fechaActual.getFullYear();
+                document.getElementById("year").textContent = anio;
+            }
+
+            // Llamar a la función al cargar la página
+            pintarAnioActual();
+        </script>
+        <script src="../js/servicios.js"></script>
+    </footer>
+</body>
+</html>

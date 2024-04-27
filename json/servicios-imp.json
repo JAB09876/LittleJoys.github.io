@@ -1,0 +1,19 @@
+{
+  "tarifas_impresion": [
+    {
+      "codigo": "J119",
+      "descripcion": "Copia blanco y negro",
+      "precio": "₡25 C/U"
+    },
+    {
+      "codigo": "J394",
+      "descripcion": "Impresión blanco y negro",
+      "precio": "₡75 C/U"
+    },
+    {
+      "codigo": "J385",
+      "descripcion": "Copia e impresión a color",
+      "precio": "₡200 C/U"
+    }
+  ]
+}

@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Little Joys</title>
+      <!-- Bootstrap CSS -->
+      <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+      <link href="img/logo.png" rel="icon"/>
+      <!--Hoja de estilos personalizada -->
+      <link rel="stylesheet" href="css/home/default.css">
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <!-- Animate.css -->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+      <!-- Bootstrap JS -->
+      <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
+   </head>
+   <body>
+      <!-- Barra de navegación -->
+      <nav class="navbar navbar-expand-lg navbar-dark bg-info">
+         <div class="container">
+            <a class="navbar-brand" href="#">
+            <img src="img/logo.png" alt="Logo de la tienda" class="logo">
+            Little Joys
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+               <ul class="navbar-nav ms-auto">
+                  <li class="nav-item">
+                     <a class="nav-link text-white animate__animated" href="index.html" onmouseenter="this.classList.add('animate__bounce')" onmouseleave="this.classList.remove('animate__bounce')">Home</a>
+                  </li>
+                  <li class="nav-item">
+                     <a class="nav-link text-white animate__animated" href="html/contacto.html" onmouseenter="this.classList.add('animate__bounce')" onmouseleave="this.classList.remove('animate__bounce')">Contacto</a>
+                  </li>
+                  <li class="nav-item">
+                     <a class="nav-link text-white animate__animated" href="html/servicios.html" onmouseenter="this.classList.add('animate__bounce')" onmouseleave="this.classList.remove('animate__bounce')">Servicios</a>
+                  </li>
+                  <li class="nav-item">
+                     <a class="nav-link text-white animate__animated" href="html/acerca_de.html" onmouseenter="this.classList.add('animate__bounce')" onmouseleave="this.classList.remove('animate__bounce')">Acerca de..</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                     <a class="nav-link dropdown-toggle text-white animate__animated" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false" onmouseenter="this.classList.add('animate__bounce')" onmouseleave="this.classList.remove('animate__bounce')">Temas de interés</a>
+                     <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <li><a class="dropdown-item" href="html/temas_de_interes/guia_de_talla.html">Guía de Tallas</a></li>
+                     </ul>
+                  </li>
+               </ul>
+            </div>
+         </div>
+      </nav>
+      <!-- Carrusel -->
+      <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel" data-bs-interval="4000">
+         <div class="carousel-inner">
+            <!-- Primera diapositiva -->
+            <div class="carousel-item active">
+               <img src="img/tienda/FotoInterior1.jpg" class="d-block w-100" alt="Imagen 1">
+               <div class="carousel-caption d-flex flex-column justify-content-end align-items-start">
+                  <div class="carousel-caption d-flex flex-column justify-content-end align-items-start" style="margin-bottom: 20%;">
+                     <h5 class="fs-1 texto-carrusel texto-superior" id="textoTienda1">Nuestra variedad de Productos</h5>
+                     <a href="html/contacto.html" class="btn btn-lg btn-primary" id="btn-1">Más Información</a>
+                  </div>
+               </div>
+            </div>
+            <!-- Segunda diapositiva -->
+            <div class="carousel-item">
+               <picture>
+                  <!-- Imagen para dispositivos grandes -->
+                  <source srcset="img/carrusel/PiñataDesktop.jpg" media="(min-width: 768px)">
+                  <!-- Imagen para dispositivos pequeños -->
+                  <img src="img/carrusel/piñataMobile.jpg" class="d-block w-100" id="imagen-2" alt="Imagen 2">
+               </picture>
+               <div class="carousel-caption d-flex flex-column justify-content-end align-items-start" style="margin-bottom: 20%;">
+                  <h5 class="fs-1 texto-carrusel" id="textoTextoPinnata">Nuestras Piñatas</h5>
+               </div>
+            </div>
+            <!-- Tercera diapositiva -->
+            <div class="carousel-item">
+               <picture>
+                  <!-- Imagen para dispositivos grandes -->
+                  <source srcset="img/carrusel/estampadoDesktop.jpg" media="(min-width: 768px)">
+                  <!-- Imagen para dispositivos pequeños -->
+                  <img src="img/carrusel/estampadoMobile.jpg" class="d-block w-100" id="imagen-3" alt="Imagen 3">
+               </picture>
+               <div class="carousel-caption d-flex flex-column justify-content-end align-items-start" style="margin-bottom: 20%;">
+                  <h5 class="fs-1 texto-carrusel" id="textoEstampado">Nuestra Hermosa camiseta de KarolG</h5>
+               </div>
+            </div>
+            <!--Cuarta diapostiva-->
+            <div class="carousel-item">
+               <img src="img/tienda/TeindaFrenteDeff.jpg" class="d-block w-100" alt="Imagen 4">
+               <div class="carousel-caption d-flex flex-column justify-content-end align-items-start mt-3 mt-md-0" style="margin-bottom: 20%;" id="caja-texto-boton-1">
+                  <h5 class="fs-1 texto-carrusel texto-superior" id="textoTiendaE">Nuestra Tienda</h5>
+                  <a href="html/contacto.html" class="btn btn-lg btn-primary">Más Información</a>
+               </div>
+            </div>
+         </div>
+         <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleSlidesOnly" data-bs-slide="prev">
+         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+         <span class="visually-hidden">Previous</span>
+         </button>
+         <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleSlidesOnly" data-bs-slide="next">
+         <span class="carousel-control-next-icon" aria-hidden="true"></span>
+         <span class="visually-hidden">Next</span>
+         </button>
+      </div>
+      <!-- Fin del Carrusel -->
+      <!-- Contenido principal -->
+      <main>
+         <div class="container mt-5">
+            <div class="row">
+               <!-- Contenido principal -->
+               <div class="col-md-8 offset-md-2 caja-main">
+                  <h2>Nuevos Servicios y Productos</h2>
+                  <p>¡Nos complace anunciar que ahora ofrecemos servicios de fotocopiado y estampado en prendas! Además, hemos ampliado nuestra gama de productos para incluir una variedad de coloridas piñatas para celebrar tus ocasiones especiales. Descubre más sobre estos emocionantes nuevos servicios y productos.</p>
+                  <ul>
+                     <li>Servicios de fotocopiado</li>
+                     <li>Estampado en prendas</li>
+                  </ul>
+                  <a href="html/servicios.html" class="btn btn-primary mt-4" id="boton">Más información</a>
+               </div>
+               <!-- Información sobre productos y servicios -->
+               <div class="col-md-8 offset-md-2 mt-5 caja-main">
+                  <h2>Lo que Vendemos</h2>
+                  <p>En Little Joys nos especializamos en ofrecerte una amplia gama de productos y servicios para satisfacer tus necesidades. Aquí hay una lista de lo que vendemos:</p>
+                  <ul>
+                     <li>Ropa para niños</li>
+                     <li>Útiles escolares</li>
+                     <li>Piñatas</li>
+                     <li>Ropa para clases</li>
+                     <li>Bolsos</li>
+                     <li>Servicios de estampados en prendas</li>
+                     <li>Servicios de fotocopiado</li>
+                  </ul>
+                  <p>¡Visítanos y descubre todo lo que tenemos para ofrecerte!</p>
+                  <a href="html/contacto.html" class="btn btn-primary mt-4" id="boton">Ubícanos</a>
+               </div>
+            </div>
+            <!-- Imágenes -->
+            <div class="row mt-5 caja-main">
+               <div class="col-md-12">
+                  <h3 class="text-center mb-4">Algunos de los productos que vendemos</h3>
+               </div>
+               <div class="col-md-3">
+                  <img src="img/products/ropaninno.jpg" class="img-fluid foto-p" alt="Ropa para niños">
+               </div>
+               <div class="col-md-3">
+                  <img src="img/products/utilEscolar.jpg" class="img-fluid foto-p" alt="Útiles escolares">
+               </div>
+               <div class="col-md-3">
+                  <img src="img/products/pinnata.jpg" class="img-fluid foto-p" alt="Piñatas">
+               </div>
+               <div class="col-md-3">
+                  <img src="img/products/ropa clases.jpg" class="img-fluid foto-p" alt="Ropa para clases">
+               </div>
+            </div>
+            <!-- Servicios de impresión y estampado -->
+            <div class="row mt-5 caja-main">
+               <div class="col-md-12">
+                  <h3 class="text-center mb-4">Nuestros Servicios de Fotocopiado y Estampado</h3>
+               </div>
+               <div class="col-md-6 d-flex justify-content-center">
+                  <img src="img/Servicios/fotocopia.jpg" class="img-fluid foto-p" alt="Servicio de impresión">
+               </div>
+               <div class="col-md-6 d-flex justify-content-center">
+                  <img src="img/carrusel/estampado.jpg" class="img-fluid foto-p" alt="Servicio de estampado">
+               </div>
+            </div>
+            <!--Sección de preguntas frecuentes-->
+            <aside>
+               <div class="container mt-5 caja-main">
+                  <div class="row">
+                     <div class="col-md-12">
+                        <h3 class="text-center mb-4">Preguntas Frecuentes</h3>
+                     </div>
+                     <div class="col-md-6">
+                        <h4>¿Cuál es su política de cambios?</h4>
+                        <p>Nuestra política de cambios permite realizar cambios por otro artículo dentro de los próximos 15 días posteriores a la compra. El artículo debe estar en su estado original y con etiquetas, y se requerirá la presentación de la factura de compra.</p>
+                    </div>                    
+                     <div class="col-md-6">
+                        <h4>¿Ofrecen envíos?</h4>
+                        <p>No, actualmente no ofrecemos envíos. Nuestros productos están disponibles para recoger en tienda.</p>
+                     </div>
+                     <div class="col-md-6">
+                        <h4>¿Tienen redes sociales?</h4>
+                        <p>Sí, nos encuentras en nuestras redes sociales en Facebook, Gmail y WhatsApp. ¡No dudes en seguirnos para estar al tanto de nuestras novedades y promociones especiales! Además, visita nuestra página web para obtener más información sobre nuestros productos y servicios.</p>
+                    </div>                    
+                     <div class="col-md-6">
+                        <h4>¿Tienen servicio al cliente?</h4>
+                        <p>Sí, tenemos un equipo de servicio al cliente disponible para ayudarte con cualquier pregunta o inquietud que puedas tener. Puedes contactarnos por teléfono, correo electrónico o a través de nuestras redes sociales.</p>
+                     </div>
+                     <div class="col-md-6">
+                        <h4>Horario de apertura de la tienda:</h4>
+                        <p>Nuestro horario de atención es de lunes a viernes de 9:30 a.m. a 6:00 p.m. y los sábados de 9:00 a.m. a 6:00 p.m. Estamos cerrados los domingos y no abrimos días feriados.¡Esperamos verte pronto en nuestra tienda!</p>
+                    </div>
+                    <div class="col-md-6">
+                     <h4>¿Cuáles son los métodos de pago aceptados?</h4>
+                     <p>Aceptamos pagos en efectivo y a través de SINPE Móvil. Lamentablemente, no aceptamos tarjetas de crédito o débito en este momento. ¡Gracias por tu comprensión!</p>
+                     </div>                                                      
+                  </div>
+               </div>
+            </aside>
+         </div>
+      </main>
+      <!-- Pie de página -->
+      <footer class="bg-info py-2" style="padding: 10px;">
+         <div class="container">
+            <div class="row">
+               <div class="col-md-6">
+                  <div class="follow-us">
+                     <p class="text-light">Síguenos en:</p>
+                     <div class="social-icons">
+                        <a href="https://www.facebook.com/littlejoys1?mibextid=ZbWKwL" target="_blank">
+                        <img src="img/facebook.png" alt="Facebook">
+                        </a>
+                        <a href="mailto:littlejoys94@gmail.com" target="_blank">
+                        <img src="img/gmail.png" alt="Gmail">
+                        </a>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-md-6 d-flex justify-content-md-end align-items-center">
+                  <div class="whatsapp">
+                     <p class="text-light mb-0">Envíanos un Whatsapp</p>
+                     <a href="https://api.whatsapp.com/send?phone=%2B50672220611&data=ARDrQfVhoKIiF5mj4MZlJUSZFeZaqvLEHSyHTLa_hbB6KikHGqNtH04qExBrbfqkNFb6s1MkWwquYgv9SgO6uM_l0xJpLyDN8xYuUMH3zw1ONqvePkVuc_oYZ0g9zEvtaQrjc7m1WlkcqwY29Ihq3eR4Lg&source=FB_Page&app=facebook&entry_point=page_cta" target="_blank">
+                     <img src="img/whatsapp.png" alt="WhatsApp">
+                     </a>
+                  </div>
+               </div>
+            </div>
+            <p class="text-light text-center mt-3 mb-0">© <span id="year"></span> Little Toys. Todos los derechos reservados.</p>
+         </div>
+      </footer>
+      <!-- Script para mostrar el año actual -->
+      <script>
+         function pintarAnioActual() {
+             var fechaActual = new Date();
+             var anio = fechaActual.getFullYear();
+             document.getElementById("year").textContent = anio;
+         }
+         // Llamar a la función al cargar la página
+         pintarAnioActual();
+      </script>
+   </body>
+</html>

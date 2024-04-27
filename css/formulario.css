@@ -1,0 +1,12 @@
+#boton {
+  background-color: rgb(13, 202, 240);
+  border-color: antiquewhite;  
+  margin-top: -20px;
+}
+
+#formularioContainer {
+  background-color: #f0f8e6; /* Cambia el color según tus preferencias */
+  margin-top:  10px;
+  margin-bottom: 10px;
+  border-radius: 30px;
+}

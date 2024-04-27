@@ -1,0 +1,132 @@
+* {
+    box-sizing: border-box;
+}
+
+header {
+    background-color: rgb(13, 202, 240);
+    padding: 20px;
+    color: #fff;
+    display: flex;
+    align-items: center;
+}
+
+.header-content {
+    margin-left: 20px;
+}
+
+header h1 {
+    margin: 0;
+}
+
+#menu-bar {
+    background-color: rgb(13, 202, 240);
+    border-radius: 70px;
+}
+
+#container {
+    margin: 0 auto;
+    text-align: center;
+}
+
+#container a {
+    text-decoration: none;
+    color: #333;
+    transition: color 0.3s ease;
+    margin-right: 10px;
+}
+
+#container a:hover {
+    color: #ff6600;
+}
+
+.text-orange {
+    color: orange;
+}
+
+.logo {
+    width: 100px;
+    height: auto;
+    margin-right: 10px;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f8e6;
+    color: #000;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+main {
+    flex: 2;
+    display: flex;
+    min-height: 80vh;
+}
+
+.news-section {
+    width: 70%;
+}
+
+.topics-aside {
+    width: 30%;
+}
+
+@media (max-width: 768px) {
+    main {
+        flex-direction: column;
+    }
+    .news-section,
+    .topics-aside {
+        width: 100%;
+    }
+}
+
+footer.mifooter {
+    background-color: rgb(13, 202, 240);
+}
+
+@media screen and (max-width: 768px) {
+    footer {
+        padding: 5px;
+    }
+}
+
+@media (max-width: 991.98px) {
+    .navbar-toggler-icon.text-orange {
+        color: orange;
+    }
+}
+
+.follow-us, .whatsapp {
+    float: left;
+    background-color: rgb(13, 202, 240);
+}
+
+.social-icons {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.social-icons img {
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+}
+
+.whatsapp img {
+    width: 40px;
+    height: 40px;
+}
+
+.text-orange {
+    color: orange;
+}
+ 
+/* Agrega estilos personalizados aquí */
+.follow-us, .whatsapp {
+    text-align: center;
+    margin-bottom: 20px; /* Espacio entre elementos en dispositivos móviles */
+}

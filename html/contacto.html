@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+
+      <title>Contacto</title>
+      <!-- Bootstrap CSS -->
+      <link href="../bootstrap/css/bootstrap.min.css" rel="stylesheet">
+      <link href="../img/logo.png" rel="icon"/>
+      <!--Hoja de estilos personalizada -->
+      <link rel="stylesheet" href="../css/contacto/contacto.css">
+      <!-- Animate.css -->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+      <!--Importación de JavaScrpit-->
+      <script src="../JQuery/jquery-3.7.1.min.js"></script>
+      <script src="../js/maps.js"></script>
+      <!-- Cargar la API de Google Maps JavaScript -->
+      <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDWRX-3VLgbsTU6pHMd6UxsJESxQ4WX-nI&callback=initMap" async defer></script>
+   </head>
+   <body>
+      <!-- Barra de navegación -->
+      <nav class="navbar navbar-expand-lg navbar-dark bg-info">
+         <div class="container">
+            <a class="navbar-brand" href="#">
+            <img src="./../img/logo.png" alt="Logo de la tienda" class="logo">
+            Little Joys
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+               <ul class="navbar-nav ms-auto">
+                  <li class="nav-item">
+                     <a class="nav-link text-white animate__animated" href="../index.html" onmouseenter="this.classList.add('animate__bounce')" onmouseleave="this.classList.remove('animate__bounce')">Home</a>
+                  </li>
+                  <li class="nav-item">
+                     <a class="nav-link text-white animate__animated" href="contacto.html" onmouseenter="this.classList.add('animate__bounce')" onmouseleave="this.classList.remove('animate__bounce')">Contacto</a>
+                  </li>
+                  <li class="nav-item">
+                     <a class="nav-link text-white animate__animated" href="servicios.html" onmouseenter="this.classList.add('animate__bounce')" onmouseleave="this.classList.remove('animate__bounce')">Servicios</a>
+                  </li>
+                  <li class="nav-item">
+                     <a class="nav-link text-white animate__animated" href="acerca_de.html" onmouseenter="this.classList.add('animate__bounce')" onmouseleave="this.classList.remove('animate__bounce')">Acerca de..</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                     <a class="nav-link dropdown-toggle text-white animate__animated" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false" onmouseenter="this.classList.add('animate__bounce')" onmouseleave="this.classList.remove('animate__bounce')">Temas de interés</a>
+                     <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <li><a class="dropdown-item" href="temas_de_interes/guia_de_talla.html">Guía de Tallas</a></li>
+                     </ul>
+                  </li>
+               </ul>
+            </div>
+         </div>
+      </nav>
+      <!-- Galería de fotos -->
+      <section class="gallery-section py-4">
+         <div class="container" id="galeria">
+            <h2 class="text-center">Nuestra Tienda</h2>
+            <div class="row row-cols-1 row-cols-md-3 g-4 mt-4">
+               <div class="col">
+                  <div class="card">
+                     <img src="../img/tienda/FotoInterior1.jpg" class="card-img-top foto" alt="Foto 1">
+                  </div>
+               </div>
+               <div class="col">
+                  <div class="card">
+                     <img src="../img/tienda/TeindaFrenteDeff.jpg" class="card-img-top foto" alt="Foto 2">
+                  </div>
+               </div>
+               <div class="col">
+                  <div class="card">
+                     <img src="../img/tienda/FotoInterior3.jpg" class="card-img-top foto" alt="Foto 3">
+                  </div>
+               </div>
+            </div>
+            <div class="row row-cols-1 row-cols-md-3 g-4 mt-4">
+               <div class="col">
+                  <div class="card">
+                     <img src="../img/tienda/FotoInterior4.jpg" class="card-img-top foto" alt="Foto 4">
+                  </div>
+               </div>
+               <div class="col">
+                  <div class="card">
+                     <img src="../img/tienda/FotoInterior5.jpg" class="card-img-top foto" alt="Foto 5">
+                  </div>
+               </div>
+               <div class="col">
+                  <div class="card">
+                     <img src="../img/tienda/FotoInterior6.jpg" class="card-img-top foto" alt="Foto 6">
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+      <!-- Reproductor de vídeo -->
+      <section class="video-section py-4">
+         <div class="container-xl" id="cont-video">
+            <h2 class="text-center" id="text-encima-video">Observa Nuestra Tienda</h2>
+            <div class="embed-responsive embed-responsive-16by9 mt-4" id="cv">
+               <iframe class="embed-responsive-item" src="../video/video.mp4" allowfullscreen width="600px" height="300px" id="video"></iframe>
+            </div>
+         </div>
+      </section>
+      <!-- Horario de la tienda -->
+      <section class="store-hours-section py-4">
+         <div class="container" id="cont-horario">
+            <h2 class="text-center">Horario de la Tienda</h2>
+            <div class="row justify-content-center mt-4">
+               <div class="col-md-6">
+                  <p class="text-center">Lunes a Viernes: 9:30 am - 6:00 pm</p>
+                  <p class="text-center">Sábado: 9:00 am - 6:00 pm</p>
+               </div>
+            </div>
+         </div>
+      </section>
+      <!-- Mapa de Google Maps -->
+      <section class="map-section py-4" id="cont-main-ubicacion">
+         <div class="container" id="contendor-ubicacion">
+            <h2 class="text-center">Ubicación</h2>
+            <div class="embed-responsive embed-responsive-4by3 mt-4" id="cont-maps">
+               <div id="map"></div>
+               <div id="mensaje" class="text-center fs-4"></div>
+            </div>
+         </div>
+      </section>
+      <!-- Pie de página -->
+      <footer class="bg-info py-2" style="padding: 10px;">
+         <div class="container">
+            <div class="row">
+               <div class="col-md-6">
+                  <div class="follow-us">
+                     <p class="text-light">Síguenos en:</p>
+                     <div class="social-icons">
+                        <a href="https://www.facebook.com/littlejoys1?mibextid=ZbWKwL" target="_blank">
+                        <img src="../img/facebook.png" alt="Facebook">
+                        </a>
+                        <a href="mailto:littlejoys94@gmail.com" target="_blank">
+                        <img src="../img/gmail.png" alt="Gmail">
+                        </a>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-md-6 d-flex justify-content-md-end align-items-center">
+                  <div class="whatsapp">
+                     <p class="text-light mb-0">Envíanos un Whatsapp</p>
+                     <a href="https://api.whatsapp.com/send?phone=%2B50672220611&data=ARDrQfVhoKIiF5mj4MZlJUSZFeZaqvLEHSyHTLa_hbB6KikHGqNtH04qExBrbfqkNFb6s1MkWwquYgv9SgO6uM_l0xJpLyDN8xYuUMH3zw1ONqvePkVuc_oYZ0g9zEvtaQrjc7m1WlkcqwY29Ihq3eR4Lg&source=FB_Page&app=facebook&entry_point=page_cta" target="_blank">
+                     <img src="../img/whatsapp.png" alt="WhatsApp">
+                     </a>
+                  </div>
+               </div>
+            </div>
+            <p class="text-light text-center mt-3 mb-0">© <span id="year"></span> Little Toys. Todos los derechos reservados.</p>
+         </div>
+      </footer>
+      <!-- Bootstrap JS -->
+      <script src="../bootstrap/js/bootstrap.bundle.min.js"></script>
+   </body>
+</html>
